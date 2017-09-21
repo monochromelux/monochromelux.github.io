@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Dong-Young Kim" />
+	<title>OpenGL 한국어 가이드</title>
+	<link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/static/css/source-han-sans.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+</head>
+
+<body>
+	<main>
+		<header id="main">
+			<h1>OpenGL 함수 한글 설명서</h1>
+		</header>
+		<div id="sidebar">
+			<nav>
+				<ul>
+					<li><a href="#main" style="text-align: center">&lt; TOP &gt;</a></li>
+					<li><a href="#GL">GL 함수</a></li>
+					<li><a href="#GLU">GLU 함수</a></li>
+					<li><a href="#GLUT">GLUT 함수</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="content">
+			<section id="notice">
+				<h2>&lt; 알림 &gt;</h2>
+				<p>
+					이 페이지는 Silicon Graphics, Inc.의 OpenGL API를 한글로 번역한 페이지입니다.<br />
+					한글화 프로젝트 관련 사이트는 아래 항목을 참고하시기 바랍니다.<br />
+					<a href="https://www.khronos.org/opengl/">Khronos OpenGL,</a>
+					<a href="https://www.opengl.org/">OpenGL.org,</a>
+					<a href="https://khronos.org/registry/OpenGL/index_gl.php">GL/GLU Specification,</a>
+					<a href="https://www.opengl.org/resources/libraries/glut/glut-3.spec.pdf">GLUT Specification</a>
+					<span class="comment">&lt;!-- <a href="http://oss.sgi.com/projects/FreeB/" rel="license" title="SGI Free Software License B Version 2.0">SGI Free Software 라이선스 전문 보기,</a> <a href="http://opencontent.org/openpub/" rel="license" title="Open Publication License v1.0">Open Publication 라이선스 전문 보기</a> --></span>
+				</p>
+				<p>
+					# 한글화 기여자: 
+					<a href="mailto:31337.cert@gmail.com" title="31337.cert@gmail.com">김동영</a>, 
+					<a href="mailto:ggrr12345@naver.com" title="ggrr12345@naver.com">이효은</a>,
+					<a href="mailto:ho9983@naver.com" title="ho9983@naver.com">김창호</a><br />
+					<!-- 김동영: 웹 프로그래밍, 세부 가이드 1차 번역, 전체 2차 번역, 번역 문체 총괄 -->
+					<!-- 이효은: GL·GLU·GLUT 함수 사용 목적 1차 번역, GLUT 세부 가이드 1차 번역 -->
+					<!-- 김창호: GL·GLU 세부 가이드 1차 번역 -->
+				</p>
+			</section>
+			<section id="dict">
+				<h2>&lt; 용어 사전 &gt;</h2>
+				<ul>
+					<li><a href="http://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=054262-1" target="_blank">렌더링 (Rendering)</a></li>
+					<li><a href="http://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=059597-3" target="_blank">뷰포트 (Viewport)</a></li>
+					<li><a href="http://terms.naver.com/entry.nhn?docId=1613097&cid=50372&categoryId=50372" target="_blank">쉐이딩 (Shading)</a></li>
+					<li><a href="https://ko.wikipedia.org/wiki/%EC%9C%A0%ED%83%80_%EC%A3%BC%EC%A0%84%EC%9E%90" target="_blank">유타 주전자 (Utah Teapot)</a></li>
+					<li><a href="http://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=045473-2" target="_blank">유휴 (Idle)</a></li>
+					<li><a href="http://terms.naver.com/entry.nhn?docId=3340671&cid=55642&categoryId=55642" target="_blank">이차 곡면 (Quadric Surface)</a>
+					<li><a href="http://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=095853-1" target="_blank">전경색 (Foreground Color)</a></li>
+					<li><a href="http://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=052436-1" target="_blank">폴리곤 (Polygon)</a></li>
+					<li><a href="http://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=037861-1" target="_blank">콜백 (Callback)</a></li>
+					<li><a href="http://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=092061-1" target="_blank">투영 행렬 (Projection Matrix)</a></li>
+					<li><a href="http://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=058677-1" target="_blank">트리거 (Trigger)</a></li>
+					<li><a href="http://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=052750-1" target="_blank">프리미티브 (Primitive)</a></li>
+				</ul>
+			</section>
+			<article id="GL">
+				<h2>GL 함수</h2>
+				<table>
+					<caption>GL 함수 목록</caption>
+					<thead>
+						<tr>
+							<th scope="col">함수 이름</th>
+							<th scope="col">사용 목적</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="func"><a href="./glBegin.html">glBegin &amp; glEnd</a></td>
+							<td><a href="#dict" class="comment">프리미티브(Primitive)</a> 요소를 표현하기 위한 좌표들의 범위 지정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glClear.html">glClear</a></td>
+							<td>값을 지정하기 위한 버퍼의 초기화</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glClearColor.html">glClearColor</a></td>
+							<td>색상 버퍼의 값 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glColor.html">glColor</a></td>
+							<td>현재 <a href="#dict" class="comment">전경색</a> 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glEdgeFlag.html">glEdgeFlag</a></td>
+							<td>모서리 경계 표시 플래그 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glEnable.html">glEnable &amp; glDisable</a></td>
+							<td>기능들의 활성화/비활성화 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glFlush.html">glFlush</a></td>
+							<td>GL 명령어 강제 실행</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glFrontFace.html">glFontFace</a></td>
+							<td><a href="#dict" class="comment">폴리곤(Polygon)</a>의 앞면과 뒷면 정의</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glLoadIdentity.html">glLoadIdentity</a></td>
+							<td>현재 행렬을 항등 행렬로 교체(≒초기화)</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glMatrixMode.html">glMatrixMode</a></td>
+							<td>현재 행렬 종류 명시</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glOrtho.html">glOrtho</a></td>
+							<td>원근이 표현되지 않는(정사형)의 표현 공간 범위 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glPolygonMode.html">glPolygonMode</a></td>
+							<td><a href="#dict" class="comment">폴리곤(Polygon)</a>의 래스터화 방식 지정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glPolygonStipple.html">glPolygonStipple</a></td>
+							<td>점 패턴의 폴리곤 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glPushMatrix.html">glPushMatrix &amp; glPopMatrix</a></td>
+							<td>현재 행렬 스택에 Push, Pop 작업 수행</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glRotate.html">glRotate</a></td>
+							<td>현재 행렬에 회전 행렬을 곱한 값 적용</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glScale.html">glScale</a></td>
+							<td>현재 행렬에 배율 행렬을 곱한 값 적용</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glShadeModel.html">glShadeModel</a></td>
+							<td>현재 모델의 <a href="#dict" class="comment">쉐이딩(Shading)</a> 방식 지정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glVertex.html">glVertex</a></td>
+							<td>좌표의 값 지정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glViewport.html">glViewport</a></td>
+							<td><a href="#dict" class="comment">뷰포트(Viewport)</a>를 설정</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+			<article id="GLU">
+				<h2>GLU 함수</h2>
+				<table>
+					<caption>GLU 함수 목록</caption>
+					<thead>
+						<tr>
+							<th scope="col">함수 이름</th>
+							<th scope="col">사용 목적</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="func"><a href="./gluCylinder.html">gluCylinder</a></td>
+							<td>원기둥 생성</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./gluDisk.html">gluDisk</a></td>
+							<td>원반 생성</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./gluNewQuadric.html">gluNewQuadric</a></td>
+							<td><a href="#dict" class="comment">이차 곡면</a> 오브젝트 생성</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./gluPerspective.html">gluPerspective</a></td>
+							<td>원근 <a href="#dict" class="comment">투영</a> 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./gluQuadricNormals.html">gluQuadricNormals</a></td>
+							<td><a href="#dict" class="comment">이차 곡면</a>의 법선 형태 명시</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./gluSphere.html">gluSphere</a></td>
+							<td>구 생성</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+			<article id="GLUT">
+				<h2>GLUT 함수</h2>
+				<table>
+					<caption>GLUT 함수 목록</caption>
+					<thead>
+						<tr>
+							<th scope="col">함수 이름</th>
+							<th scope="col">사용 목적</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="func"><a href="./glutAddMenuEntry.html">glutAddMenuEntry</a></td>
+							<td>현재 메뉴에 새로운 메뉴 엔트리 추가</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutAddSubMenu.html">glutAddSubMenu</a></td>
+							<td>현재 메뉴에 새로운 하위 메뉴 추가</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutAttachMenu.html">glutAttachMenu &amp; glutDetachMenu</a></td>
+							<td>현재 창에서 메뉴를 불러올 마우스 버튼 지정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutCreateMenu.html">glutCreateMenu</a></td>
+							<td>새로운 Context 메뉴 생성</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutCreateWindow.html">glutCreateWindow</a></td>
+							<td>최상의 레벨의 창 생성</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutDisplayFunc.html">glutDisplayFunc</a></td>
+							<td>현재 창에 디스플레이 callback 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutGetModifiers.html">glutGetModifiers</a></td>
+							<td>수식 키(Shift, Ctrl, Alt)의 입력 상태를 반환</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutIdleFunc.html">glutIdleFunc</a></td>
+							<td>현재 창에 <a href="#dict" class="comment">Idle</a> callback 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutInit.html">glutInit</a></td>
+							<td>GLUT 라이브러리 초기화</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutInitDisplayMode.html">glutInitDisplayMode</a></td>
+							<td>디스플레이의 초기 모드 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutInitWindowPosition.html">glutInitWindowPosition &amp; glutInitWindowSize</a></td>
+							<td>각각 창의 초기 위치와 크기 지정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutKeyboardFunc.html">glutKeyboardFunc</a></td>
+							<td>현재 창에 키보드 callback 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutMainLoop.html">glutMainLoop</a></td>
+							<td>GLUT 이벤트 반복 처리 시작</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutMotionFunc.html">glutMotionFunc &amp; glutPassiveMotionFunc</a></td>
+							<td>현재 창에 마우스의 움직임을 처리하는 callback 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutMouseFunc.html">glutMouseFunc</a></td>
+							<td>현재 창에 마우스 callback 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutPostRedisplay.html">glutPostRedisplay</a></td>
+							<td>현재 창 또는 지정된 창의 디스플레이를 재호출</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutReshapeFunc.html">glutReshapeFunc</a></td>
+							<td>현재 창에 크기 변경 callback 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutSetWindowTitle.html">glutSetWindowTitle &amp; glutSetIconTitle</a></td>
+							<td>최상위 창의 창 제목 또는 아이콘의 제목 변경</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutSolidCone.html">glutSolidCone &amp; glutWireCone</a></td>
+							<td>면 또는 선 모양의 원뿔 생성</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutSolidCube.html">glutSolidCube &amp; glutWireCube</a></td>
+							<td>면 또는 선 모양의 정육면체 생성</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutSolidSphere.html">glutSolidSphere &amp; glutWireSphere</a></td>
+							<td>면 또는 선 모양의 구체 생성</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutSolidTeapot.html">glutSolidTeapot &amp; glutWireTeapot</a></td>
+							<td>면 또는 선 모양의 <a href="dict" class="comment">유타 주전자</a> 생성</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutSolidTorus.html">glutSolidTorus &amp; glutWireTorus</a></td>
+							<td>면 또는 선 모양의 원환체 생성</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutSpecialFunc.html">glutSpecailFunc</a></td>
+							<td>현재 창에 특수 키 callback 설정</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutSwapBuffers.html">glutSwapBuffers</a></td>
+							<td>이중 버퍼 모드에서 현재 창의 사용 버퍼를 교체</td>
+						</tr>
+						<tr>
+							<td class="func"><a href="./glutTimerFunc.html">glutTimerFunc</a></td>
+							<td>1/1000초 단위로 작동하는 타이머 callback(≒<a href="#dict" class="comment">트리거</a>) 설정</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+		</div>
+		<footer>
+			<a href="#main">&lt; Top &gt;</a>
+			<p>
+				Copyright &copy; 1991-2006 Silicon Graphics, Inc. Copyright &copy; 2010-2014 Khronos Group.<br />
+				Copyright &copy; 2017 Dong-Young Kim &amp; Hyoeun Lee &amp; Chang Ho Kim.
+			</p>
+		</footer>
+	</main>
+</body>
+
+</html>

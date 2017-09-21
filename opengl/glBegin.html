@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Dong-Young Kim" />
+	<title>glBegin &amp; glEnd</title>
+	<link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/static/css/source-han-sans.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/source-code-pro.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/guide.css" />
+</head>
+
+<body>
+	<main>
+		<header>
+			<h1>glBegin &amp; glEnd</h1>
+		</header>
+		<section class="usage">
+			<h2>선언 형태</h2>
+			<ul>
+				<li>
+					<span class="keyword">void</span> glBegin (
+						<span class="type">GLenum</span> <span class="parameter">mode</span>
+					);
+				</li>
+				<li><hr /></li>
+				<li>
+					<span class="keyword">void</span> glEnd (
+						<span class="keyword">void</span>
+					);
+				</li>
+			</ul>
+		</section>
+		<article class="guide">
+			<h2>매개 변수</h2>
+			<table>
+				<thead>
+					<tr>
+						<th scope="col">변수명</th>
+						<th scope="col">설명</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>mode</td>
+						<td>
+							<span class="keyword">glBegin</span>과 바로 다음 <span class="keyword">glEnd</span> 사이에 있는 좌표들의 값을 읽어서 새로운 요소를 생성합니다.<br />
+							요소의 형태는 지정된 다음 10가지 기호 상수를 통해 표현할 수 있습니다.: <span class="macro">GL_POINTS, GL_LINES, GL_LINE_STRIP, GL_LINE_LOOP, GL_TRIANGLES, GL_TRIANGLE_STRIP, GL_TRIANGLE_FAN, GL_QUADS, GL_QUAD_STRIP, GL_POLYGON</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+		<footer>
+			<p>
+				Copyright &copy; Silicon Graphics, Inc. Copyright &copy; Khronos Group.<br />
+				Copyright &copy; 2017 Dong-Young Kim.
+			</p>
+		</footer>
+	</main>
+</body>
+
+</html>

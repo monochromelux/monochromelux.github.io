@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Dong-Young Kim" />
+	<title>glMatrixMode</title>
+	<link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/static/css/source-han-sans.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/source-code-pro.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/guide.css" />
+</head>
+
+<body>
+	<main>
+		<header>
+			<h1>glMatrixMode</h1>
+		</header>
+		<section class="usage">
+			<h2>선언 형태</h2>
+			<ul>
+				<li>
+					<span class="keyword">void</span> glMatrixMode (
+                        <span class="type">GLenum</span>
+                        <span class="parameter">mode</span>
+                    );
+				</li>
+			</ul>
+		</section>
+		<article class="guide">
+			<h2>매개 변수</h2>
+			<table>
+				<thead>
+					<tr>
+						<th scope="col">변수명</th>
+						<th scope="col">설명</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>mode</td>
+						<td>
+							연산을 수행할 행렬 스택의 종류를 지정합니다. 행렬 스택의 종류에는 <span class="macro">GL_MODELVIEW, GL_PROJECTION, GL_TEXTURE</span>가 있습니다.<br/>
+                            기본값은 <span class="macro">GL_MODELVIEW</span>입니다. 또한 'ARB_imaging' 확장 기능이 지원되는 경우 <span class="macro">GL_COLOR</span>도 허용됩니다.
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+		<footer>
+			<p>
+				Copyright &copy; Silicon Graphics, Inc. Copyright &copy; Khronos Group.<br />
+				Copyright &copy; 2017 Dong-Young Kim.
+			</p>
+		</footer>
+	</main>
+</body>
+
+</html>
