@@ -1,0 +1,48 @@
+@font-face {
+	font-family: "Source Han Sans";
+	font-weight: 200;
+	font-style: normal;
+	src: local("Source Han Sans K ExtraLight"),
+		 local("Source Han Sans KR ExtraLight"),
+		 url("../fonts/SourceHanSansKR-ExtraLight.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Han Sans";
+	font-weight: 300;
+	font-style: normal;
+	src: local("Source Han Sans K Light"),
+		 local("Source Han Sans KR Light"),         
+		 url("../fonts/SourceHanSansKR-Light.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Han Sans";
+	font-weight: 400;
+	font-style: normal;
+	src: local("Source Han Sans K Regular"),
+		 local("Source Han Sans KR Regular"),
+		 url("../fonts/SourceHanSansKR-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Han Sans";
+	font-weight: 500;
+	font-style: normal;
+	src: local("Source Han Sans K Medium"),
+		 local("Source Han Sans KR Medium"),
+		 url("../fonts/SourceHanSansKR-Medium.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Han Sans";
+	font-weight: 700;
+	font-style: normal;
+	src: local("Source Han Sans K Bold"),
+		 local("Source Han Sans KR Bold"),
+		 url("../fonts/SourceHanSansKR-Bold.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Han Sans";
+	font-weight: 900;
+	font-style: normal;
+	src: local("Source Han Sans K Heavy"),
+		 local("Source Han Sans KR Heavy"),
+		 url("../fonts/SourceHanSansKR-Heavy.otf") format("opentype");
+}

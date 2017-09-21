@@ -1,0 +1,56 @@
+section.usage ul {
+	list-style-type: none;
+	font-family: "Source Code Pro";
+	font-weight: 600;
+}
+
+article.guide {
+	padding: 20px 30px;
+	margin: 0 20px 2em 20px;
+	background-color: #eeffff;
+}
+article.guide ul {
+	list-style-type: none;
+	margin-left: 10px;
+	margin-top: 5px;
+	font-size: 90%;
+}
+
+table, th, td {
+	border: 0;
+}
+table tr:nth-child(odd) {
+	background-color: #f3f3f3;
+}
+table tr:nth-child(even) {
+	background-color: #ffffff;
+}
+table tr td:first-child {
+	border-right: 1px solid white;
+	text-align: center;
+}
+
+table th {
+	background-color: powderblue;
+	color: #333333;
+}
+table th:first-child {
+	width: 25%;
+}
+
+hr {
+	border: 1px dashed #999999;
+}
+
+span.keyword {
+	color: #0000ff;
+}
+span.type {
+	color: #2b91af;
+}
+span.parameter {
+	color: #808080;
+}
+span.macro {
+	color: #6f008a;
+}

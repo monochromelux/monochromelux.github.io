@@ -1,0 +1,48 @@
+@font-face {
+	font-family: "Source Han Serif";
+	font-weight: 200;
+	font-style: normal;
+	src: local("Source Han Serif K ExtraLight"),
+		 local("Source Han Serif KR ExtraLight"),
+		 url("../fonts/SourceHanSerifKR-ExtraLight.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Han Serif";
+	font-weight: 300;
+	font-style: normal;
+	src: local("Source Han Serif K Light"),
+		 local("Source Han Serif KR Light"),
+		 url("../fonts/SourceHanSerifKR-Light.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Han Serif";
+	font-weight: 400;
+	font-style: normal;
+	src: local("Source Han Serif K Regular"),
+		 local("Source Han Serif KR Regular"),
+		 url("../fonts/SourceHanSerifKR-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Han Serif";
+	font-weight: 500;
+	font-style: normal;
+	src: local("Source Han Serif K Medium"),
+		 local("Source Han Serif KR Medium"),
+		 url("../fonts/SourceHanSerifKR-Medium.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Han Serif";
+	font-weight: 700;
+	font-style: normal;
+	src: local("Source Han Serif K Bold"),
+		 local("Source Han Serif KR Bold"),
+		 url("../fonts/SourceHanSerifKR-Bold.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Han Serif";
+	font-weight: 900;
+	font-style: normal;
+	src: local("Source Han Serif K Heavy"),
+		 local("Source Han Serif KR Heavy"),
+		 url("../fonts/SourceHanSerifKR-Heavy.otf") format("opentype");
+}

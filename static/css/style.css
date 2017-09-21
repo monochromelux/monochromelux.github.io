@@ -1,0 +1,149 @@
+html, body, h1, h2, h3, p, ul, ol, li, table, tr, th, td {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Source Han Sans", sans-serif;
+}
+p + p {
+	margin-top: 1em;
+}
+h2 {
+	margin-bottom: .5em;
+}
+
+
+/* Semantic Elements */
+
+main {
+	width: 100%;
+}
+
+header {
+	background-color: #333333;
+	padding: 1em;
+	margin-bottom: 20px;
+	color: #ffffff;
+}
+header#main {
+	text-align: center;
+}
+
+
+/* sidebar */
+nav {
+	position: fixed;
+	padding-bottom: 40px;
+	width: 150px;
+	max-width: 150px;
+	background-color: #333333;
+}
+nav ul {
+	list-style-type: none;
+}
+nav ul a {
+	display: block;
+	padding: 10px 20px;
+}
+nav ul a:link {
+	color: #ffffff;
+	font-weight: bold;
+}
+nav ul a:hover {
+	background: #99ffcc;
+	color: #333333;
+	text-decoration: none;
+}
+
+/* content */
+div#content {
+	margin-left: 150px;
+}
+section {
+	padding: 20px 30px;
+	margin: 0 20px 20px 20px;
+	background-color: #eeffee;
+}
+section ul {
+	margin-left: 1em;
+	list-style-type: circle;
+}
+article {
+	padding: 0 20px;
+	margin-bottom: 2em;
+}
+article td a.comment {
+	font-weight: 500;
+}
+
+footer {
+	padding-top: 20px;
+	margin: 20px;
+	border-top: 1px solid #cccccc;
+	text-align: center;
+}
+
+
+/* Table */
+
+table {
+	width: 100%;
+}
+table, th, td {
+	padding: 5px 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table tr:nth-child(odd) {
+	background-color: #eeeeee;
+}
+table tr:nth-child(even) {
+	background-color: #ffffff;
+}
+table th {
+	background-color: #333333;
+	line-height: 180%;
+	color: #ffffff;
+}
+table th:first-child {
+	width: 30%;
+	border-right: 1px solid white;
+}
+
+caption {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.func {
+	text-align: left;
+	font-weight: 500;
+}
+
+
+/* <a> tag */
+
+a:link {
+	color: royalblue;
+	text-decoration: none;
+}
+a:hover {
+	color: blueviolet;
+	text-decoration: underline;
+}
+a:active {
+	color: crimson;
+}
+
+a:link.comment, .comment a:link, .comment {
+	color: darkgreen;
+}
+a:hover.comment, .comment a:hover {
+	color: lightcoral;
+}
+a:active.comment, .comment a:active {
+	color: crimson;
+}
