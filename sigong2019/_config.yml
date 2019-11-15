@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://sunbliss.github.io/photorama/gallery/"  
-  - JOURNAL: "https://sunbliss.github.io/photorama/journal/"
-  - ABOUT: "https://sunbliss.github.io/photorama/about/"
+  - GALLERY: "https://monochromelux.github.io/sigong2019/gallery/"  
+  - JOURNAL: "https://monochromelux.github.io/sigong2019/journal/"
+  - ABOUT: "https://monochromelux.github.io/sigong2019/about/"
 
 # All translation keys
 translations:
